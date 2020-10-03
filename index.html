@@ -57,7 +57,8 @@
 }
 */
 .mark1 { 
- background-color: RGBA(119,33,46,0.9);
+/* background-color: RGBA(119,33,46,0.9);*/
+   text-shadow: 0 2px 0 black, 0 0 10px black;
   color: white ;
     width: 100%;
     padding: 0 10px;
@@ -70,18 +71,17 @@
   width: 400px;
   position:absolute;
  top: 85%;
-        
-        
+    
         
 font-family: sans-serif;
         line-height: 1;
-    font-weight: 300;
+    font-weight: 500;
 
 }
         
     .sizepic{
-            height: 400px;
-            width: 400px;
+            height: 350px;
+            width: 450px;
         }
     .overlay1 {
   position: absolute;
@@ -89,8 +89,8 @@ font-family: sans-serif;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 400px;
-  width: 400px;
+  height: 350px;
+  width: 450px;
   opacity: 0;
   transition: .5s ease;
   background-color:  #77212E;
@@ -113,15 +113,32 @@ font-family: sans-serif;
   display: flex;
   justify-content: center;
   background-color: white;
+    
 }
 
 .flex-container > div {
-  background-color:black;
-  width: 400px;
+  background-color:white;
+  width: 450px;
   margin: 15px;
   text-align: center;
   line-height: 15px;
   font-size: 30px;
+  padding: 10px;
+}
+
+ .flex-item-left {
+  flex: 33%;
+}
+        .flex-item-center{
+  flex: 33%;
+}
+    .flex-item-right {
+  flex: 33%;
+}
+ @media (max-width: 1200px) {
+  .flex-container {flex-direction: column;
+    
+  }
 }
       </style>
   </head>
@@ -199,7 +216,6 @@ font-family: sans-serif;
       </div>
     </section>
       
-<p> remove later </p>
 		
 		<section class="ftco-services bg-light">
 			<div class="container">
@@ -242,20 +258,30 @@ font-family: sans-serif;
             
         </section>
 
-      
-      
+      <br>
+      <br>
+      <br>
+  
+      <div class="container">
+    		<div class="row justify-content-center mb-5 pb-2">
+          <div class="col-md-7 heading-section ftco-animate">
+            <h1 class="mb-4">Our Services</h1>
+            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences</p>
+          </div>
+        </div>
+    	</div>
       
       <div class="flex-container">
-  <div>        <div class="container2">
-           <div class='container1'>
+  <div class="flex-item-left">        <div class="container2 ftco-animate" >
+           <div class='container1' >
                     <img src="images/s1.jpg" alt="Snow" class='sizepic' >
-                    <div class="centered1" ><span class="mark1">Residential Interiors</span> </div> 
+                    <div class="centered1" ><span class="mark1" >Residential Interiors</span> </div> 
                     </div>
                      <div class="overlay1">
     <div class="text1">Hello World</div>
         </div>
             </div> </div>
-  <div>         <div class="container2" >
+  <div class="flex-item-center">         <div class="container2 ftco-animate" >
            <div class='container1'>
                     <img src="images/s2.jpg" alt="Snow" class='sizepic' >
                     <div class="centered1" ><span class="mark1">Office Interiors</span></div> 
@@ -264,7 +290,7 @@ font-family: sans-serif;
     <div class="text1">Hello World</div>
         </div>
             </div> </div>
-  <div>        <div class="container2" >
+  <div class="flex-item-right">        <div class="container2 ftco-animate" >
            <div class='container1'>
                     <img src="images/s3.jpg" alt="Snow" class='sizepic' >
                <div class="centered1" ><span class="mark1">  Architectural designs  </span> </div> 
@@ -379,7 +405,7 @@ font-family: sans-serif;
 		          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
 		            <div class="block-18 text-center">
 		              <div class="text">
-		                <strong class="number" data-number="18">0</strong>
+		                <strong class="number" data-number="5">0</strong>
 		                <span>Years of Experienced</span>
 		              </div>
 		            </div>
@@ -387,7 +413,7 @@ font-family: sans-serif;
 		          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
 		            <div class="block-18 text-center">
 		              <div class="text">
-		                <strong class="number" data-number="351">0</strong>
+		                <strong class="number" data-number="18">0</strong>
 		                <span>Happy Clients</span>
 		              </div>
 		            </div>
@@ -395,16 +421,8 @@ font-family: sans-serif;
 		          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
 		            <div class="block-18 text-center">
 		              <div class="text">
-		                <strong class="number" data-number="564">0</strong>
+		                <strong class="number" data-number="52">0</strong>
 		                <span>Finished Projects</span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-		            <div class="block-18 text-center">
-		              <div class="text">
-		                <strong class="number" data-number="300">0</strong>
-		                <span>Working Days</span>
 		              </div>
 		            </div>
 		          </div>
@@ -427,33 +445,33 @@ font-family: sans-serif;
     		<div class="row no-gutters">
     			<div class="col-md-6 col-lg-3 ftco-animate">
     				<div class="project">
-	    				<img src="images/work-1.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<img src="images/p1.jpg" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
 	    					<h3>Office Interior Design in Paris</h3>
 	    				</div>
-	    				<a href="images/work-1.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    				<a href="images/Po1.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
     				</div>
     			</div>
     			<div class="col-md-6 col-lg-3 ftco-animate">
     				<div class="project">
-	    				<img src="images/work-2.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<img src="images/p2.jpg" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
 	    					<h3>Office Interior Design in Paris</h3>
 	    				</div>
-	    				<a href="images/work-2.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    				<a href="images/Po2.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
     				</div>
     			</div>
     			<div class="col-md-6 col-lg-3 ftco-animate">
     				<div class="project">
-	    				<img src="images/work-3.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<img src="images/p3.jpg" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
 	    					<h3>Office Interior Design in Paris</h3>
 	    				</div>
-	    				<a href="images/work-3.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    				<a href="images/Po3.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
     				</div>
