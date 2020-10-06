@@ -7983,6 +7983,16 @@ h1, h2, h3, h4, h5,
     color: #000000;
     font-size: 14px; }
 
+.blog-entry .text .heading1 {
+    font-size: 30px;
+    font-weight: 400;
+/*    text-align: center;*/
+        margin-bottom: 16px; }
+    .blog-entry .text .heading1 a {
+      color: #000000; }
+      .blog-entry .text .heading1 a:hover, .blog-entry .text .heading a:focus, .blog-entry .text .heading a:active {
+        color: #77212E; }
+
 .blog-entry .meta {
   width: 100px;
   text-align: right; }
