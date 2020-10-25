@@ -1,85 +1,71 @@
 <?php
-include "config.php";
-include "session.php";
+include "connection.php";
+//include "session.php";
 $error = '';
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
+// && isset($_POST['submit'])
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit']) ) {
+    echo "hi";
 	//$serial
+    echo print_r($_POST,true);
+    
     $fname = trim($_POST['fname']);
     $lname = trim($_POST['lname']);
 	$phone = trim($_POST['phone']);
     $email = trim($_POST['email']);
-	$service1=($_POST['option1']);
-	$service2=($_POST['option2']);
-	$service3=($_POST['option3']);
+	$service = trim($_POST['service']);
 	$location = trim($_POST['location']);
 	$size = trim($_POST['size']);
 	$budget = trim($_POST['budget']);
 	$look = trim($_POST['look']);
-	$special = trim($_POST['speciall']);
-	$picture = trim($_POST['picture']);
-	
-	$query1="INSERT into reqaquote ( fname,lname,phone,email,service,location,size,budget,look,special,picture ) VALUES
-($fname,$lname,$phone,$email,$service1,$service2,$service3,$location,$size,$budget,$look,$special,%picture)";
+	$special = trim($_POST['special']);
+	//$picture =  $_FILES['picture']['tmp_name'];
+  //  $picture = file_get_contents($picture);
+//	$picture=NULL;
+//  	// Get image name
+//  	$image = $_FILES['image']['name'];
+//  	// Get text
+//  	$image_text = mysqli_real_escape_string($db, $_POST['image_text']);
+//
+//  	// image file directory
+//  	$target = "images/".basename($image);
+
+
+  
+
+
+	$query1="INSERT into reqaquote (fname,lname,phone,email,service,location,size,budget,look,special)  VALUES
+('$fname','$lname','$phone','$email','$service','$location','$size','$budget','$look','$special')";
 
 $result=mysqli_query($conn , $query1);
 
+       if(mysqli_query($conn, $query1)){
+        echo "Records added successfully.";
+    } else{
+        echo "ERROR: Could not able to execute $query1. " . mysqli_error($conn);
+    }
+    
+    $query2="    INSERT INTO reqaquote1(fname,lname,phone,email,service,location,size,budget,look,special)
+    SELECT DISTINCT fname,lname,phone,email,service,location,size,budget,look,special
+    FROM reqaquote;";
 
+$result2=mysqli_query($conn , $query2);
+    
+     $query3="TRUNCATE TABLE reqaquote";
 
-	
-	
-    //$password = trim($_POST['password']);
-    //$confirm_pass = trim($_POST['confirm_pass']);
-    //$room_code = substr($fname,0,2).substr($lname,0,2).mt_rand(10000,99999);
-    //echo $room_code.'<br>';
-    //$pass_hash = md5($password);
-    //echo $password.'<br>';
-   // echo $pass_hash.'<br>';
-    //if($query = $conn->prepare("SELECT * FROM Teachers WHERE email = ?")) {
-//        $error = '';
-       /* $query->bind_param('s',$email);
-        $query->execute();
-        
-        $query->store_result();
-        if ($query->num_rows > 0){
-            $error .= '<p class="error">The email address is already registered!</p>';
-        }
-        else {
-            // Validate Password Strength
-            $uppercase = preg_match('@[A-Z]@', $password);
-            $lowercase = preg_match('@[a-z]@', $password);
-            $number    = preg_match('@[0-9]@', $password);
-            $specialChars = preg_match('@[^\w]@', $password);
-            if (!$uppercase || !$lowercase || !$number || !$specialChars || strlen($password) < 8){
-                $error .= '<p class="error">Password must have atleast 8 characters and should include at least one uppercase, one lowercase, one number, and one special character.</p>';
-            }
-            // Validate Confirm Password
-            if (empty($error)) {
-                if ( $password != $confirm_pass){
-                    $error .= '<p class="error">Password did not match.</p>'; 
-               // echo "Fail";
-                }
-                else {
-                    $insertQuery = $conn->prepare("INSERT INTO Teachers (fname, lname, email, password, room_code) VALUES (?, ?, ?, ?, ?);");
-                    $insertQuery->bind_param("sssss",$fname,$lname,$email,$pass_hash,$room_code);
-                    $result = $insertQuery->execute();
-                    if ($result){
+$result3=mysqli_query($conn , $query3);
+    
+    
+      if ($result){
                         echo '<p class="success"> Your registration was successful!</p>';
-						header("location: login.php");
+						header("location: thankyou.html");
                     } else {
                         echo '<p class="success"> Your registration was unsuccessful</p>';
                     }
-                    $insertQuery->close();
-                   // echo "Success";
-                }
-            } 
-        }*/
-		$queryreqaquote="insert into reqaquote values ('" 
-        $query->close();
-    }
-    // Close DB connection
+    
+    
     mysqli_close($conn);
+ 
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -135,7 +121,11 @@ $result=mysqli_query($conn , $query1);
       </style>
       
       
-
+<script>
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+</script>
       
       
 
@@ -206,7 +196,7 @@ $result=mysqli_query($conn , $query1);
 
       
       
-      <form action="" method="post">           
+      <form action="" method="POST" >           
             
   <div class="form-group" style="padding: 0 40px;">
       <br>
@@ -243,17 +233,13 @@ $result=mysqli_query($conn , $query1);
     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
   </div>
 -->
-<!--
+
       <br>
-  <div class="form-group">
-    <label for="exampleFormControlSelect1">The Service you're looking for</label>
-    <select class="form-control" id="exampleFormControlSelect1">
-       <option>Residential Interior</option>
-      <option>Office Interior</option>
-      <option>Architectural Design</option>
-    </select>
+       <div class="form-group">
+    <label for="exampleFormControlTextarea1">The Service you're looking for</label>
+    <textarea class="form-control" name="service" id="exampleFormControlTextarea1" rows="1.5" placeholder="Residential Interior/Office Interior/Architectural Design"></textarea>
   </div>
--->
+
       <br>
 <!--
   <div class="form-group">
@@ -261,24 +247,66 @@ $result=mysqli_query($conn , $query1);
     <select multiple class="form-control" id="exampleFormControlSelect2">
       <option>Residential Interior</option>
       <option>Office Interior</option>
-      <option>Architectural Design</option>
+      <option>Architectural Desigh</option>
     </select>
   </div>
 -->
+<!--
   <div class="form-check form-check-inline">
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+  <input class="form-check-input" type="checkbox" value="option1" name="option">
   <label class="form-check-label" for="inlineCheckbox1">Residential Interior</label>
 </div>
 <div class="form-check form-check-inline">
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  <input class="form-check-input" type="checkbox"  value="option2" name="option">
   <label class="form-check-label" for="inlineCheckbox2">Office Interior</label>
 </div>
                     <div class="form-check form-check-inline">
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option3">
+  <input class="form-check-input" type="checkbox" value="option3" name="option">
   <label class="form-check-label" for="inlineCheckbox2">Architectural Design</label>
 </div>  
+-->
+<!--
                     <br><br>
                     
+-->
+ 
+      
+<!--
+   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown button
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+      
+      <br> <br> 
+      
+<div class="btn-group">
+  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+    Menu
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu">
+    <li><a href="#">Choice1</a></li>
+    <li><a href="#">Choice2</a></li>
+    <li><a href="#">Choice3</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Choice..</a></li>
+  </ul>
+</div>
+
+ <label for="sel1">Select list:</label>
+  <select class="form-control" id="sel1">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+  </select>
+      
+-->
+      
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Location of Property</label>
     <textarea class="form-control" name="location" id="exampleFormControlTextarea1" rows="2" cols="5"></textarea>
@@ -304,14 +332,19 @@ $result=mysqli_query($conn , $query1);
     <textarea class="form-control" name="special" id="exampleFormControlTextarea1" rows="1.5"></textarea>
   </div>
     
+<!--
   <div class="form-group">
     <label for="exampleFormControlFile1">Any Sample Photo of what you would like</label>
-    <input type="file" name="picture" class="form-control-file" id="exampleFormControlFile1">
-  </div>
+    <input type="file" name="picture" value='picture' class="form-control-file" id="exampleFormControlFile1">
       <br>
-      
-      <input type="submit" value="Submit">
-
+      <input type="file" name="image" />
+    <br>
+  </div>
+-->
+      <br>
+     <a href="thankyou.html">
+      <input type="submit" value='submit' name='submit'>
+      </a>
 <br>
       <br>
                     
