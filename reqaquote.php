@@ -63,6 +63,23 @@ $result3=mysqli_query($conn , $query3);
                     }
     
     
+    
+//    if($_POST["submit"]) {
+//    $recipient="mallikakonkar2000@gmail.com";
+//    $subject="Form to email message";
+//    $sender=$_POST["fname"];
+//    $senderEmail=$_POST["email"];
+//    $message=$_POST["fname"];
+//
+//    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+//
+//    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+//
+//    $thankYou="<p>Thank you! Your message has been sent.</p>";
+
+    
+
+    
     mysqli_close($conn);
  
 }

@@ -49,7 +49,8 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 </style>
     </header>
 <body>
-    
+    <h2>Direction One Admin</h2>
+    <br>
     <h3>You have logged in </h3>
     <table name = "userDetails">
         <tr>
@@ -91,6 +92,8 @@ tr:nth-child(even) {background-color: #f2f2f2;}
                     <?php
                     echo '</tr>';
                     
+                    
+                    
                 }
             }
      
@@ -103,7 +106,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     </table>
  <br>
         <br>
-        <button onclick="document.location='adminblog.php'"> <h2>Enter a Blog
+        <button onclick="document.location='adminblog.php'"> <h2>Add a Blog
         </h2> </button>
         <br>
         <br>
