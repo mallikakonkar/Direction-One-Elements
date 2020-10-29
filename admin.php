@@ -86,9 +86,9 @@ tr:nth-child(even) {background-color: #f2f2f2;}
                     echo '<td>'. $row['look'] .'</td>';
                     echo '<td>'. $row['special'] .'</td>';
                    // echo '<td ><button onclick="myFunction(this)" id="'.$row['serial'].'" > Delete </button></td>';
-                //  echo '<td>'.'<input type='checkbox' name='delete[]' value="'.$row['serial'].'" >'.'</td>'; 
+                //  echo '<td>'.'<input type='checkbox' name='delete[]' value="'.$row['serial'].'" >'.'</td>'; onClick="window.location.reload();"
                     ?>
-                    <td><a onClick="window.location.reload();" href="delete-process.php?serial=<?php echo $row["serial"]; ?>">Delete</a></td>
+                    <td><a  href="delete-process.php?serial=<?php echo $row["serial"]; ?>">Delete</a></td>
                     <?php
                     echo '</tr>';
                     
