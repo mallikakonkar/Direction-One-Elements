@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+include "connection.php";
+?>
 <html lang="en">
   <head>
     <title>Klift - Free Bootstrap 4 Template by Colorlib</title>
@@ -42,6 +45,26 @@
       
       </style>
   </head>
+    
+    
+          <?php
+      
+      $query1="SELECT * FROM `blog` order by id desc;";
+
+      $result=mysqli_query($conn , $query1);
+
+      
+      
+      
+
+      
+
+
+
+
+
+      
+      ?>
   <body>
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -95,31 +118,59 @@
       </div>
     </section>
 
+      
+      
+      
+      
+      
 		<section class="ftco-section">
 			<div class="container">
 				<div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section ftco-animate">
+              <br>
+              <br>
             <h2 class="mb-4">Recent Blog</h2>
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
           </div>
         </div>	
+                
+                
+                
+                
+                
+                
+                
 				<div class="row">
+                    
+                    <?php
+                          while ($row = mysqli_fetch_assoc($result)) 
+      {
+        $msg= '<img src="data:image/jpeg;base64,'.base64_encode($row['image']). ' " /> ';
+                              $id=$row['id']
+                              
+                              ?>
+                    
           <div class="col-md-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
+            <div class="blog-entry" data-aos-delay="100">
+              <a href="blog-single.html" class="block-20" >
+                                  <?php echo $msg ?>
+
               </a>
               <div class="text d-flex py-4">
+<!--
                 <div class="meta mb-3">
-                  <div><a href="#">Sep. 20, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
-                <div class="desc pl-3">
-	                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-	              </div>
+-->
+<!--                <div class="desc pl-3">-->
+	                <h3 class="heading" style="text-align: center;"><a href="blog-single.php?id=<?php echo $id ?>"
+><?php  echo $row['name']; ?></a></h3>
+<!--	              </div>-->
               </div>
             </div>
           </div>
+                    
+                    <?php } ?>
+<!--
           <div class="col-md-4 ftco-animate">
             <div class="blog-entry" data-aos-delay="100">
               <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
@@ -200,6 +251,7 @@
               </div>
             </div>
           </div>
+-->
         </div>
 			</div>
 		</section>

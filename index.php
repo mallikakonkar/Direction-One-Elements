@@ -1,4 +1,9 @@
+
+
 <!DOCTYPE html>
+<?php
+include "connection.php";
+?>
 <html lang="en">
   <head>
     <title>Direction One Elements</title>
@@ -160,7 +165,8 @@ font-family: sans-serif;
           
           .align1{text-align: center; font-size: 25px;
     margin-bottom: 0; color: black;}
-          
+         
+          .a { font-family: 'Enriqueta', arial, serif; line-height: 1.25; margin: 0 0 10px; font-size: 30px; font-weight: bold; }
           
           
           
@@ -181,7 +187,7 @@ font-family: sans-serif;
 <!--	        	<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>-->
 	        	<li class="nav-item"><a href="project.html" class="nav-link">Projects</a></li>
 	        	<li class="nav-item"><a href="services.html" class="nav-link">Testimonials</a></li>
-	        	<li class="nav-item"><a href="blog.html" class="nav-link">Blogs</a></li>
+	        	<li class="nav-item"><a href="blog.php" class="nav-link">Blogs</a></li>
                 <li class="nav-item"><a href="reqaquote.php" class="nav-link">Request a Quote</a></li>
                 <li class="nav-item"><a href="services.html" class="nav-link">Media Coverage</a></li>
 	          <li class="nav-item"><a href="contactus.html" class="nav-link">Contact Us</a></li>
@@ -326,7 +332,7 @@ font-family: sans-serif;
 <!--                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>-->
 <!--                </div>-->
                 <div class="desc pl-3">
-	                <h3 class="heading1" ><a href="#">Residential Interiors</a></h3>
+	                <h3 class="heading1 a" ><a href="#">Residential Interiors</a></h3>
 	              </div>
               </div>
             </div>
@@ -354,7 +360,7 @@ font-family: sans-serif;
                 </div>
 -->
                 <div class="desc pl-3">
-	                <h3 class="heading1"><a href="#"><i></i>Office Interiors</a></h3>
+	                <h3 class="heading1 a"><a href="#"><i></i>Office Interiors</a></h3>
 	              </div>
               </div>
             </div>
@@ -382,7 +388,7 @@ font-family: sans-serif;
                 </div>
 -->
                 <div class="desc pl-3">
-	                <h3 class="heading1"><a href="#">Architectural designs </a></h3>
+	                <h3 class="heading1 a"><a href="#">Architectural designs </a></h3>
 	              </div>
               </div>
             </div>
@@ -1015,7 +1021,29 @@ Our expertise also extends to the field of corporate office interiors where we h
       <br>
       <br>
       <br>
+      
+      <?php
+      
+      $query1="SELECT * FROM `blog` order by id desc LIMIT 3;";
 
+      $result=mysqli_query($conn , $query1);
+
+      $row = mysqli_fetch_assoc($result);
+      
+      
+      
+      
+      $msg= '<img src="data:image/jpeg;base64,'.base64_encode($row['image']). ' " /> ';
+      
+
+
+
+
+
+      
+      ?>
+      
+      
 		<section class="ftco-section">
 			<div class="container">
 				<div class="row justify-content-center mb-5 pb-3">
@@ -1027,79 +1055,84 @@ Our expertise also extends to the field of corporate office interiors where we h
 				<div class="row">
           <div class="col-md-4 ftco-animate">
             <div class="blog-entry">
-                <div class ='block-20' style="background-image: url('images/image_1.jpg');" >
-                <div class ='container2' >
-<!--
-              <a href="blog-single.html" class='block-20' style="background-image: url('images/image_1.jpg');">
-              </a>
--->
-                
-                <div class ='overlay1'>
-                    
-                </div>
-                    </div>
+                <div class ='block-20' >
+                <?php echo $msg ?>
                     </div>
               <div class="text d-flex py-4">
+<!--
                 <div class="meta mb-3">
                   <div><a href="#">Sep. 20, 2018</a></div>
                   <div><a href="#">Admin</a></div>
                   <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
-                <div class="desc pl-3">
-	                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-	              </div>
+-->
+<!--                <div class="desc pl-3">-->
+	                <h3 class="heading" style="text-align:center;"><a href="#"><?php  echo $row['name']; ?></a></h3>
+<!--	              </div>-->
               </div>
             </div>
           </div>
+                    
+                    <?php
+                      $row = mysqli_fetch_assoc($result);
+      
+      
+      
+      
+      $msg= '<img src="data:image/jpeg;base64,'.base64_encode($row['image']). ' " /> ';
+                    
+                    ?>
+                    
+                    
+                    
         <div class="col-md-4 ftco-animate">
             <div class="blog-entry">
-                <div class ='block-20' style="background-image: url('images/image_1.jpg');" >
-                <div class ='container2' >
-<!--
-              <a href="blog-single.html" class='block-20' style="background-image: url('images/image_1.jpg');">
-              </a>
--->
-                
-                <div class ='overlay1'>
-                    
-                </div>
-                    </div>
+                <div class ='block-20' >
+                <?php echo $msg ?>
+         
                     </div>
               <div class="text d-flex py-4">
+<!--
                 <div class="meta mb-3">
                   <div><a href="#">Sep. 20, 2018</a></div>
                   <div><a href="#">Admin</a></div>
                   <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
-                <div class="desc pl-3">
-	                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-	              </div>
+-->
+<!--                <div class="desc pl-3">-->
+	                <h3 class="heading" style="text-align:center;"><a href="#"><?php  echo $row['name']; ?></a></h3>
+<!--	              </div>-->
               </div>
             </div>
           </div>
+                    
+                      <?php
+                      $row = mysqli_fetch_assoc($result);
+      
+      
+      
+      
+      $msg= '<img src="data:image/jpeg;base64,'.base64_encode($row['image']). ' " /> ';
+                    
+                    ?>
+                    
+                    
       <div class="col-md-4 ftco-animate">
             <div class="blog-entry">
-                <div class ='block-20' style="background-image: url('images/image_1.jpg]]');" >
-                <div class ='container2' >
-<!--
-              <a href="blog-single.html" class='block-20' style="background-image: url('images/image_1.jpg');">
-              </a>
--->
-                
-                <div class ='overlay1'>
-                    
-                </div>
-                    </div>
+                <div class ='block-20' >
+                <?php echo $msg ?>
                     </div>
               <div class="text d-flex py-4">
+<!--
                 <div class="meta mb-3">
                   <div><a href="#">Sep. 20, 2018</a></div>
                   <div><a href="#">Admin</a></div>
                   <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
-                <div class="desc pl-3">
-	                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-	              </div>
+-->
+<!--                <div class="desc pl-3">-->
+	                <h3 class="heading" style="text-align:center; "><a href="#"><?php  echo $row['name']; ?></a></h3>
+<!--	              </div>-->
               </div>
             </div>
           </div>
