@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+include "connection.php";
+?>
 <html lang="en">
   <head>
     <title>Klift - Free Bootstrap 4 Template by Colorlib</title>
@@ -26,7 +29,42 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+      
+      <style>
+      
+      
+      
+          .top1{
+              
+              
+                top 30;
+                z-index: 1001
+          }
+      
+              
+      
+      </style>
   </head>
+    
+    
+          <?php
+      
+      $query1="SELECT * FROM `blog` order by id desc;";
+
+      $result=mysqli_query($conn , $query1);
+
+      
+      
+      
+
+      
+
+
+
+
+
+      
+      ?>
   <body>
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -40,32 +78,56 @@
 	        <ul class="navbar-nav ml-auto">
 	        	<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
 	        	<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-	        	<li class="nav-item active"><a href="project.html" class="nav-link">Project</a></li>
-	        	<li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-	        	<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+	        	<li class="nav-item"><a href="project.html" class="nav-link">Project</a></li>
+<!--	        	<li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>-->
+                <li class="nav-item"><a href="services.html" class="nav-link">Media Coverage</a></li>
+	        	<li class="nav-item active"><a href="blog.html" class="nav-link">Blog</a></li>
 	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+           
 	        </ul>
 	      </div>
 	    </div>
 	  </nav>
     <!-- END nav -->
-    
-    <section class="home-slider js-fullheight owl-carousel">
-      <div class="slider-item js-fullheight" style="background-image:url(images/bg_1.jpg);">
+<!--  js-fullheight mt-5 mb-3 class="slider-item  " -->
+      
+    <section class="home-slider  owl-carousel" style="height: 200px;" >
+      <div  style="background-image:url(images/bikingredbg.png); height: 200px; ">
       	<div class="overlay"></div>
         <div class="container">
-          <div class="row slider-text justify-content-center align-items-center">
+            <br>
+            <br>
+            <br>
+ 
+            <h1 style="color: white; text-align: center"> Our Projects</h1>
+         
+            
+<!--
+          <div class="row slider-text top1 align-items-center">
 
-            <div class="col-md-7 col-sm-12 text-center ftco-animate">
-            	<h1 class="mb-3 mt-5 bread">Project</h1>
-	            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Project</span></p>
+            <div class="col-md-7 col-sm-12 text-center top1 ftco-animate">
+            	<h1 class=" mt-5 mb-3 bread " style="z-index: 100;color: black" >Blog</h1>
+	            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Blog</span></p>
             </div>
+              
+              
 
           </div>
+-->
         </div>
       </div>
     </section>
-
+<br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
 		<section class="ftco-section">
     	<div class="container-fluid">
     		<div class="row no-gutters">

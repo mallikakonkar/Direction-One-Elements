@@ -182,8 +182,59 @@ Retrive all the images:
 ?>
 
 <?php
-//echo $msg;
+    
+$sql10 = "SELECT * from testimonial";
+$result10 = $conn->query($sql10);
+    
 ?>
+   
+    
+    <table name = "testimonials">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Message</th>
+            <th>Status</th>
+           
+        </tr>
+        <?php
+        
+
+        
+            if(mysqli_num_rows($result10) > 0){
+
+                while ($row = mysqli_fetch_assoc($result10)) {
+                    
+                    echo '<tr>';
+                    echo '<td>'. $row['name'] .'</td>';
+                    echo '<td>'. $row['email'] .'</td>';
+                    echo '<td>'. $row['message'] .'</td>';
+                    echo '<td>'. $row['status'] .'</td>';
+                   
+                   // echo '<td ><button onclick="myFunction(this)" id="'.$row['serial'].'" > Delete </button></td>';
+                //  echo '<td>'.'<input type='checkbox' name='delete[]' value="'.$row['serial'].'" >'.'</td>'; onClick="window.location.reload();"
+                    ?>
+                   <td><a  href="delete-process-testimonial.php?id=<?php echo $row["id"]; ?>">Delete</a></td>
+                <td><a  href="accept-process-testimonial.php?id=<?php echo $row["id"]; ?>">Accept</a></td>
+                    
+                    <?php
+                    echo '</tr>';
+                    
+                    
+                    
+                }
+            }
+     
+                    
+        ?>
+        
+        
+
+        
+    </table>
+      
+    
+    
     
     
     </body>

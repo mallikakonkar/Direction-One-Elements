@@ -1031,7 +1031,7 @@ Our expertise also extends to the field of corporate office interiors where we h
       $row = mysqli_fetch_assoc($result);
       
       
-      
+      $id=$row['id'];
       
       $msg= '<img src="data:image/jpeg;base64,'.base64_encode($row['image']). ' " /> ';
       
@@ -1067,7 +1067,7 @@ Our expertise also extends to the field of corporate office interiors where we h
                 </div>
 -->
 <!--                <div class="desc pl-3">-->
-	                <h3 class="heading" style="text-align:center;"><a href="#"><?php  echo $row['name']; ?></a></h3>
+	                <h3 class="heading" style="text-align:center;"><a href="blog-single.php?id=<?php echo $id ?>"><?php  echo $row['name']; ?></a></h3>
 <!--	              </div>-->
               </div>
             </div>
@@ -1075,7 +1075,7 @@ Our expertise also extends to the field of corporate office interiors where we h
                     
                     <?php
                       $row = mysqli_fetch_assoc($result);
-      
+      $id=$row['id'];
       
       
       
@@ -1100,7 +1100,7 @@ Our expertise also extends to the field of corporate office interiors where we h
                 </div>
 -->
 <!--                <div class="desc pl-3">-->
-	                <h3 class="heading" style="text-align:center;"><a href="#"><?php  echo $row['name']; ?></a></h3>
+	                <h3 class="heading" style="text-align:center;"><a href="blog-single.php?id=<?php echo $id ?>"><?php  echo $row['name']; ?></a></h3>
 <!--	              </div>-->
               </div>
             </div>
@@ -1108,7 +1108,7 @@ Our expertise also extends to the field of corporate office interiors where we h
                     
                       <?php
                       $row = mysqli_fetch_assoc($result);
-      
+      $id=$row['id'];
       
       
       
@@ -1131,7 +1131,7 @@ Our expertise also extends to the field of corporate office interiors where we h
                 </div>
 -->
 <!--                <div class="desc pl-3">-->
-	                <h3 class="heading" style="text-align:center; "><a href="#"><?php  echo $row['name']; ?></a></h3>
+	                <h3 class="heading" style="text-align:center; "><a href="blog-single.php?id=<?php echo $id ?>"><?php  echo $row['name']; ?></a></h3>
 <!--	              </div>-->
               </div>
             </div>
