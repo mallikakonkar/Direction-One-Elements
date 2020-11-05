@@ -112,6 +112,9 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <br>
 
 <br /><br />
+     <button onclick="document.location='adminproject.php'"> <h2>Add a Project
+        </h2> </button>
+ <br /><br />   
 <!-- this form is user to display all the images-->
 <!--
 

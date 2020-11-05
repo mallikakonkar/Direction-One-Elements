@@ -152,7 +152,7 @@ include "connection.php";
                     
           <div class="col-md-4 ftco-animate">
             <div class="blog-entry" data-aos-delay="100">
-              <a href="blog-single.html" class="block-20" >
+              <a  href="blog-single.php?id=<?php echo $id ?>" class="block-20" >
                                   <?php echo $msg ?>
 
               </a>

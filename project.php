@@ -32,8 +32,6 @@ include "connection.php";
       
       <style>
       
-      
-      
           .top1{
               
               
@@ -49,25 +47,22 @@ include "connection.php";
     
           <?php
       
-      $query1="SELECT * FROM `blog` order by id desc;";
+      $query1="SELECT * FROM `project` order by id desc;";
 
       $result=mysqli_query($conn , $query1);
-
-      
-      
-      
-
-      
-
-
-
 
 
       
       ?>
-  <body>
+  <body >
     
-	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    
+      
+
+      
+      
+      
+      <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
 	      <a class="navbar-brand" href="index.html">Klift</a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -117,33 +112,60 @@ include "connection.php";
         </div>
       </div>
     </section>
-<br>
+
       <br>
       <br>
       <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+       
+      
       
 		<section class="ftco-section">
     	<div class="container-fluid">
     		<div class="row no-gutters">
-    			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="project">
-	    				<img src="images/work-1.jpg" class="img-fluid" alt="Colorlib Template">
+    			
+                    
+                    
+                   <?php
+    while ($row = mysqli_fetch_assoc($result)) 
+      {
+//        $msg= '<img src="data:image/jpeg;base64,'.base64_encode($row['image']). ' " /> ';
+//        $id=$row['id']
+//                              
+        ?>
+                    <div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="project" >
+<!--	    				<img src="images/work-1.jpg" class="img-fluid" alt="Colorlib Template">-->
+                          <?php
+                            
+                            echo '<img class="img-fluid" style="height: 350px; width: 500px; " src="data:image/jpeg;base64, '.base64_encode($row['image'] ).'" />';
+
+                  
+                            ?>
+                  
 	    				<div class="text">
-	    					<h3>Office Interior Design in Paris</h3>
+	    					<h3><?php  echo $row['name']; ?></h3>
 	    				</div>
-	    				<a href="images/work-1.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
-	    					<span class="icon-expand"></span>
-	    				</a>
+	    				
+                        <?php
+        
+                       echo '<a href="data:image/jpeg;base64, '.base64_encode($row['image'] ).'"  class="icon image-popup d-flex justify-content-center align-items-center">';
+                        
+	    				echo'<span class="icon-expand"></span>';
+	    				echo'</a>';
+                        
+                        ?>
     				</div>
-    			</div>
+                    </div>
+                        <?php  } ?>
+                
+    		
+                
+                
+                
+            
+<!--        
     			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="project">
+    				<div class="project" style="padding: 20px 20px">
 	    				<img src="images/work-2.jpg" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
 	    					<h3>Office Interior Design in Paris</h3>
@@ -153,8 +175,10 @@ include "connection.php";
 	    				</a>
     				</div>
     			</div>
+-->
+<!--
     			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="project">
+    				<div class="project" style="padding: 20px 20px">
 	    				<img src="images/work-3.jpg" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
 	    					<h3>Office Interior Design in Paris</h3>
@@ -164,8 +188,10 @@ include "connection.php";
 	    				</a>
     				</div>
     			</div>
+-->
+<!--
     			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="project">
+    				<div class="project" style="padding: 20px 20px">
 	    				<img src="images/work-4.jpg" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
 	    					<h3>Office Interior Design in Paris</h3>
@@ -175,8 +201,10 @@ include "connection.php";
 	    				</a>
     				</div>
     			</div>
+-->
+<!--
     			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="project">
+    				<div class="project" style="padding: 20px 20px">
 	    				<img src="images/work-5.jpg" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
 	    					<h3>Office Interior Design in Paris</h3>
@@ -186,8 +214,10 @@ include "connection.php";
 	    				</a>
     				</div>
     			</div>
+-->
+<!--
     			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="project">
+    				<div class="project" style="padding: 20px 20px">
 	    				<img src="images/work-6.jpg" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
 	    					<h3>Office Interior Design in Paris</h3>
@@ -197,8 +227,10 @@ include "connection.php";
 	    				</a>
     				</div>
     			</div>
+-->
+<!--
     			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="project">
+    				<div class="project" style="padding: 20px 20px">
 	    				<img src="images/work-7.jpg" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
 	    					<h3>Office Interior Design in Paris</h3>
@@ -208,8 +240,10 @@ include "connection.php";
 	    				</a>
     				</div>
     			</div>
+-->
+<!--
     			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="project">
+    				<div class="project" style="padding: 20px 20px">
 	    				<img src="images/work-8.jpg" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
 	    					<h3>Office Interior Design in Paris</h3>
@@ -219,7 +253,9 @@ include "connection.php";
 	    				</a>
     				</div>
     			</div>
+-->
     		</div>
+<!--
     		<div class="row mt-5">
           <div class="col text-center">
             <div class="block-27">
@@ -235,9 +271,13 @@ include "connection.php";
             </div>
           </div>
         </div>
+-->
     	</div>
     </section>
-
+     <br>
+            <br>
+            <br>
+      
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
         <div class="row mb-5">
