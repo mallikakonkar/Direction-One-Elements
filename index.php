@@ -183,10 +183,9 @@ font-family: sans-serif;
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	        	<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-<!--	        	<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>-->
-	        	<li class="nav-item"><a href="project.html" class="nav-link">Projects</a></li>
-	        	<li class="nav-item"><a href="services.html" class="nav-link">Testimonials</a></li>
+	        	<li class="nav-item active"><a href="index.php" class="nav-link">Home</a></li>
+	        	<li class="nav-item"><a href="project.php" class="nav-link">Projects</a></li>
+	        	<li class="nav-item"><a href="testimonials.php" class="nav-link">Testimonials</a></li>
 	        	<li class="nav-item"><a href="blog.php" class="nav-link">Blogs</a></li>
                 <li class="nav-item"><a href="reqaquote.php" class="nav-link">Request a Quote</a></li>
                 <li class="nav-item"><a href="services.html" class="nav-link">Media Coverage</a></li>
@@ -206,7 +205,7 @@ font-family: sans-serif;
           <div class="col-md-7 text ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
             <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">You Dream We Design</h1>
             <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">We travel, we google and we desire  that  a place where we can  truly be ourselves.  Our mission is to make it into reality .</p>
-            <p><a href="#" class="btn btn-white btn-outline-white px-4 py-3 mt-3">View our works</a></p>
+            <p><a href="project.php" class="btn btn-white btn-outline-white px-4 py-3 mt-3">View our works</a></p>
           </div>
         </div>
         </div>
@@ -792,7 +791,7 @@ Our expertise also extends to the field of corporate office interiors where we h
 							<p><b>Principal Architect - Rupali Inamdar</b> is an alumni of  Rachana Sansad Academy of Architecture – 1994. She has worked with prominent Architects in Mumbai and Pune for over 15 years in the field of Architecture Design and worked on mulptiple Architecture and commercial interior projects. She also taught as a visiting faculty at various colleges & was a  consultant to architectural firms. She believes in simple elegant and economical designs that appear luxurious and grand without having to spend as much.
 <b>Director – Maneesh Konkar</b> is a  PGDM from Indian Institute of Management Bangalore 1995 and is a Business Growth Consultant & Faculty at SPJIMR & Great Lakes. He handles the business aspect of the firm that is marketing and finance.
 </p>
-							<p><a href="#" class="btn-custom">Learn More <span class="ion-ios-arrow-forward"></span></a></p>
+							<p><a href="contactus.html" class="btn-custom">Learn More <span class="ion-ios-arrow-forward"></span></a></p>
 						</div>
 					</div>
 				</div>
@@ -1184,12 +1183,12 @@ Our expertise also extends to the field of corporate office interiors where we h
             <div class="ftco-footer-widget mb-4 ml-md-4">
               <h2 class="ftco-heading-2">Links</h2>
               <ul class="list-unstyled">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.php">Home</a></li>
 <!--                <li><a href="#">About</a></li>-->
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">Blogs</a></li>
-                  <li><a href="reqaquote.html">Request a Quote</a></li>
+                <li><a href="project.php">Projects</a></li>
+                <li><a href="testimonials.php">Testimonials</a></li>
+                <li><a href="blog.php">Blogs</a></li>
+                  <li><a href="reqaquote.php">Request a Quote</a></li>
                   <li><a href="services.html">Media Coverage</a></li>
                   <li><a href="contactus.html">Contact Us</a></li>
               </ul>

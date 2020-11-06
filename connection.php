@@ -9,6 +9,6 @@
       die("Connection failed: " . mysqli_connect_error());
     }
 if($conn){
-echo("connected");
+//echo("connected");
 }
 ?>
