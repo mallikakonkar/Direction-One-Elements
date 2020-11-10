@@ -88,13 +88,7 @@ $result = $conn->query($sql);
       </style>
       
       
-<!--
-      <script>
-function myFunction() {
-  location.replace("thankyou.html")
-}
-</script>
--->
+
   </head>
     
     
@@ -165,8 +159,7 @@ function myFunction() {
           
           
               <?php
-//      header_remove();
-//          var_dump(headers_list());
+
 
     $query1="SELECT * FROM testimonial where status=1 order by time desc;";
 
@@ -222,56 +215,15 @@ function myFunction() {
                     <input type="submit" value="Post Testimonial" class="btn py-3 px-4 btn-primary" name="submit" id="myBtn">
                   </div>
                     
-                    
+
                     
 
 
                 </form>
                   
-                  <!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
-  </div>
-
-</div>
+                
                   
-                  
-                  <script>
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-//btn.onclick = function() {
-//  modal.style.display = "block";
-//}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-
-
-
-
-</script>
+     
                   </div>
             </div>
                   
@@ -294,8 +246,7 @@ window.onclick = function(event) {
 $result=mysqli_query($conn , $query1);
 
        if(mysqli_query($conn, $query1)){
-//        echo "Records added successfully.";
-//            header("location: thankyou.html");
+
     } else{
         echo "ERROR: Could not able to execute $query1. " . mysqli_error($conn);
     }
@@ -310,25 +261,9 @@ $result2=mysqli_query($conn , $query2);
      $query3="TRUNCATE TABLE testimonial1";
 
 $result3=mysqli_query($conn , $query3);
+
               
-//              echo "<script>
-//         $(window).load(function(){
-//             $('#myModal').modal('show');
-//         });
-//    </script>";
-              
-//             header_remove();
-    
-    
-//      if ($result3){
-//                        echo '<p class="success"> Your registration was successful!</p>';
-//						header("location: thankyou.html");
-//                    } else {
-//                        echo '<p class="success"> Your registration was unsuccessful</p>';
-//                    }
-              
-              
-//    
+
     
  mysqli_close($conn);
  

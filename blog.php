@@ -131,7 +131,7 @@ include "connection.php";
               <br>
               <br>
             <h2 class="mb-4">Recent Blog</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+            <p>All our blogs are written by Arch Rupali Inamdar and team. She has successfully managed own design firm mainly handling Office Interior projects and some residential projects eventually with an employee staff of 2 interior designers.</p>
           </div>
         </div>	
                 
@@ -146,17 +146,17 @@ include "connection.php";
                     <?php
                           while ($row = mysqli_fetch_assoc($result)) 
       {
-        $msg= '<img src="data:image/jpeg;base64,'.base64_encode($row['image']). ' " /> ';
+        $msg= '<img   src="data:image/jpeg;base64,'.base64_encode($row['image']). ' " /> ';
                               $id=$row['id']
                               
                               ?>
                     
           <div class="col-md-4 ftco-animate">
             <div class="blog-entry" data-aos-delay="100">
-              <a  href="blog-single.php?id=<?php echo $id ?>" class="block-20" >
-                                  <?php echo $msg ?>
-
-              </a>
+            
+                              <a href="blog-single.php?id=<?php echo $id ?>" 
+><?php  echo '<img class="block-20" style="width:400px;" src="data:image/jpeg;base64, '.base64_encode($row['image'] ).'" />';
+ ?></a>
               <div class="text d-flex py-4">
 <!--
                 <div class="meta mb-3">

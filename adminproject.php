@@ -27,6 +27,7 @@ $Id;
     </style>
 </header>
 <body>
+    
     <form action="" method="post"  enctype="multipart/form-data">
 Enter the Project Name:<br><input type="text" name="name" id="name"  /><br />
         <br><br>

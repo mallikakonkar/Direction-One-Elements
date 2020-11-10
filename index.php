@@ -217,7 +217,7 @@ font-family: sans-serif;
           <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
           <div class="col-md-7 text ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
             <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">We're Open In The Pandemic</h1>
-            <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">During this pandemic, we offer online consultancy and take utmost precaution to avoid contact. Safety of our clients is of immense importance to us</p><p><a href="#" class="btn btn-white btn-outline-white px-4 py-3 mt-3">View our works</a></p>
+            <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">During this pandemic, we offer online consultancy and take utmost precaution to avoid contact. Safety of our clients is of immense importance to us</p><p><a href="project.php" class="btn btn-white btn-outline-white px-4 py-3 mt-3">View our works</a></p>
           </div>
         </div>
         </div>
@@ -229,7 +229,7 @@ font-family: sans-serif;
           <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
           <div class="col-md-7 text ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
             <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Home is an extention of your personality</h1>
-            <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">We all dream of a beautiful  home and our passion is to design such a  home for you. Every little idea that you may have wanted in your home…share it with us and we will bring it all together.  </p><p><a href="#" class="btn btn-white btn-outline-white px-4 py-3 mt-3">View our works</a></p>
+            <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">We all dream of a beautiful  home and our passion is to design such a  home for you. Every little idea that you may have wanted in your home…share it with us and we will bring it all together.  </p><p><a href="project.php" class="btn btn-white btn-outline-white px-4 py-3 mt-3">View our works</a></p>
           </div>
         </div>
         </div>
@@ -241,7 +241,7 @@ font-family: sans-serif;
           <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
           <div class="col-md-7 text ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
             <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">What you see is what you get.</h1>
-            <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Our 3D redention of the design space is so accurate that the final out come is exactly as it has been envisioned. We work with budgets and within stipulated time. No surprises there.</p><p><a href="#" class="btn btn-white btn-outline-white px-4 py-3 mt-3">View our works</a></p>
+            <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Our 3D redention of the design space is so accurate that the final out come is exactly as it has been envisioned. We work with budgets and within stipulated time. No surprises there.</p><p><a href="project.php" class="btn btn-white btn-outline-white px-4 py-3 mt-3">View our works</a></p>
           </div>
         </div>
         </div>
@@ -590,7 +590,7 @@ We understand your requirement, prepare layout plans, do 3D modeling, create tec
 3. Design and Build. <br>
 We design and execute the project. As such the contractors and vendors are our own. If you have little time to devote to the design and execution process it is advisable to opt for this option.
 </p>
-							<p><a href="#" class="btn-custom">Learn More <span class="ion-ios-arrow-forward"></span></a></p>
+<!--							<p><a href="#" class="btn-custom">Learn More <span class="ion-ios-arrow-forward"></span></a></p>-->
 						</div>
 					</div>
 				</div>
@@ -791,7 +791,7 @@ Our expertise also extends to the field of corporate office interiors where we h
 							<p><b>Principal Architect - Rupali Inamdar</b> is an alumni of  Rachana Sansad Academy of Architecture – 1994. She has worked with prominent Architects in Mumbai and Pune for over 15 years in the field of Architecture Design and worked on mulptiple Architecture and commercial interior projects. She also taught as a visiting faculty at various colleges & was a  consultant to architectural firms. She believes in simple elegant and economical designs that appear luxurious and grand without having to spend as much.
 <b>Director – Maneesh Konkar</b> is a  PGDM from Indian Institute of Management Bangalore 1995 and is a Business Growth Consultant & Faculty at SPJIMR & Great Lakes. He handles the business aspect of the firm that is marketing and finance.
 </p>
-							<p><a href="contactus.html" class="btn-custom">Learn More <span class="ion-ios-arrow-forward"></span></a></p>
+<!--							<p><a href="contactus.html" class="btn-custom">Learn More <span class="ion-ios-arrow-forward"></span></a></p>-->
 						</div>
 					</div>
 				</div>
@@ -1027,19 +1027,8 @@ Our expertise also extends to the field of corporate office interiors where we h
 
       $result=mysqli_query($conn , $query1);
 
-      $row = mysqli_fetch_assoc($result);
-      
-      
-      $id=$row['id'];
-      
-      $msg= '<img src="data:image/jpeg;base64,'.base64_encode($row['image']). ' " /> ';
-      
-
-
-
-
-
-      
+  
+    
       ?>
       
       
@@ -1048,48 +1037,33 @@ Our expertise also extends to the field of corporate office interiors where we h
 				<div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section ftco-animate">
          <a href="blog.php"> <h2 class="mb-4">Recent Blog</h2>  </a>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+<!--            <p>Check out recent blogs here</p>-->
           </div>
         </div>	
 				<div class="row">
-          <div class="col-md-4 ftco-animate">
-            <div class="blog-entry">
-                <div class ='block-20' >
-                <?php echo $msg ?>
-                    </div>
-              <div class="text d-flex py-4">
-<!--
-                <div class="meta mb-3">
-                  <div><a href="#">Sep. 20, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
--->
-<!--                <div class="desc pl-3">-->
-	                <h3 class="heading" style="text-align:center;"><a href="blog-single.php?id=<?php echo $id ?>"><?php  echo $row['name']; ?></a></h3>
-<!--	              </div>-->
-              </div>
-            </div>
-          </div>
+         
                     
                     <?php
-                      $row = mysqli_fetch_assoc($result);
-      $id=$row['id'];
-      
-      
-      
-      $msg= '<img src="data:image/jpeg;base64,'.base64_encode($row['image']). ' " /> ';
+                                      
                     
+                           while ($row = mysqli_fetch_assoc($result)) 
+                         {
+                              
+                              $id=$row['id']
+               
                     ?>
                     
                     
                     
         <div class="col-md-4 ftco-animate">
             <div class="blog-entry">
-                <div class ='block-20' >
-                <?php echo $msg ?>
+                
+                            
+                              <a href="blog-single.php?id=<?php echo $id ?>" 
+><?php  echo '<img class="block-20" style="width:400px;" src="data:image/jpeg;base64, '.base64_encode($row['image'] ).'" />';
+ ?></a>
          
-                    </div>
+                    
               <div class="text d-flex py-4">
 <!--
                 <div class="meta mb-3">
@@ -1106,35 +1080,11 @@ Our expertise also extends to the field of corporate office interiors where we h
           </div>
                     
                       <?php
-                      $row = mysqli_fetch_assoc($result);
-      $id=$row['id'];
-      
-      
-      
-      $msg= '<img src="data:image/jpeg;base64,'.base64_encode($row['image']). ' " /> ';
-                    
+                           }
                     ?>
                     
                     
-      <div class="col-md-4 ftco-animate">
-            <div class="blog-entry">
-                <div class ='block-20' >
-                <?php echo $msg ?>
-                    </div>
-              <div class="text d-flex py-4">
-<!--
-                <div class="meta mb-3">
-                  <div><a href="#">Sep. 20, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
--->
-<!--                <div class="desc pl-3">-->
-	                <h3 class="heading" style="text-align:center; "><a href="blog-single.php?id=<?php echo $id ?>"><?php  echo $row['name']; ?></a></h3>
-<!--	              </div>-->
-              </div>
-            </div>
-          </div>
+      
         </div>
 			</div>
 		</section>

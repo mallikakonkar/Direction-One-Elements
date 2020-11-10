@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <?php
-  include "connection.php";  
+  include "connection.php"; 
+
   session_start();
 
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == false){
@@ -16,7 +17,8 @@ $Id;
 
 <html>
 <header>
-    <style>
+ 
+        <style>
         body{
             text-align: center;
             font-family: sans-serif;
@@ -27,6 +29,9 @@ $Id;
     </style>
 </header>
 <body>
+    
+    
+    
     <form action="" method="post"  enctype="multipart/form-data">
 Enter the Blog Name:<br><input type="text" name="name" id="name"  /><br />
         <br><br>
@@ -155,7 +160,7 @@ Enter the para:<br><input type="text" name="para" id="" /><br />
 <p id="demo"> </p>
 
 -->
-    
+    <br>
   <input type="submit" value="submit" name="submit" />      
        
 </form>
