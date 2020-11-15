@@ -2,7 +2,7 @@
 <?php
 include "connection.php";
   $id=$_GET['id'] ;
-echo $id;
+
 ?>
 <html lang="en">
   <head>
@@ -61,9 +61,9 @@ echo $id;
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
 	        	<li class="nav-item "><a href="index.php" class="nav-link">Home</a></li>
-	        	<li class="nav-item"><a href="project.php" class="nav-link">Projects</a></li>
+	        	<li class="nav-item active"><a href="project.php" class="nav-link">Projects</a></li>
 	        	<li class="nav-item"><a href="testimonials.php" class="nav-link">Testimonials</a></li>
-	        	<li class="nav-item active"><a href="blog.php" class="nav-link">Blogs</a></li>
+	        	<li class="nav-item "><a href="blog.php" class="nav-link">Blogs</a></li>
                 <li class="nav-item"><a href="reqaquote.php" class="nav-link">Request a Quote</a></li>
                 <li class="nav-item"><a href="services.html" class="nav-link">Media Coverage</a></li>
 	          <li class="nav-item"><a href="contactus.html" class="nav-link">Contact Us</a></li>

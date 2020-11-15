@@ -131,7 +131,7 @@ include "connection.php";
               <br>
               <br>
             <h2 class="mb-4">Recent Blog</h2>
-            <p>All our blogs are written by Arch Rupali Inamdar and team. She has successfully managed own design firm mainly handling Office Interior projects and some residential projects eventually with an employee staff of 2 interior designers.</p>
+            <p>All our blogs are written by Ar Rupali Inamdar and team. She has successfully managed own design firm mainly handling Office Interior projects and some residential projects eventually with an employee staff of 2 interior designers.</p>
           </div>
         </div>	
                 
@@ -155,7 +155,7 @@ include "connection.php";
             <div class="blog-entry" data-aos-delay="100">
             
                               <a href="blog-single.php?id=<?php echo $id ?>" 
-><?php  echo '<img class="block-20" style="width:400px;" src="data:image/jpeg;base64, '.base64_encode($row['image'] ).'" />';
+><?php  echo '<img class="block-20" style="width:100%;" src="data:image/jpeg;base64, '.base64_encode($row['image'] ).'" />';
  ?></a>
               <div class="text d-flex py-4">
 <!--
@@ -291,9 +291,9 @@ include "connection.php";
               <h2 class="ftco-heading-2">Services</h2>
               <ul class="list-unstyled">
                 
-                <li><a href="#">Residential Interiors </a></li>
-                <li><a href="#">Office Interiors</a></li>
-                  <li><a href="#">Architectural Design</a></li>
+                <li><a href="project.php">Residential Interiors </a></li>
+                <li><a href="project.php">Office Interiors</a></li>
+                  <li><a href="project.php">Architectural Design</a></li>
                 
                 
               </ul>

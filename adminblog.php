@@ -23,22 +23,27 @@ $Id;
             text-align: center;
             font-family: sans-serif;
             font-size: 20px;
+            padding: 15px 50px 150px 50px;
                 ;
         }
     
-    </style>
+    </style> <meta charset="utf-8">
+
+     <link rel="stylesheet" type="text/css" href="external.css">
 </header>
 <body>
     
-    
+    <a href="admin.php">     <button class="button4" >Admin Home</button></a>
+
     
     <form action="" method="post"  enctype="multipart/form-data">
-Enter the Blog Name:<br><input type="text" name="name" id="name"  /><br />
+        <h4>Enter the Blog Name:</h4>
+        <br><input type="text" name="name" id="name"  /><br />
         <br><br>
 
-Enter the Front Page image:
+        <h4>Enter the Front Page image:</h4>
         <br>
-<input name="image" id="image" accept="image/JPEG" type="file" ><br /><br />
+<input name="image" class="button3"id="image" accept="image/JPEG" type="file" ><br /><br />
         
         <br>
    <script>
@@ -51,12 +56,14 @@ Enter the Front Page image:
         
         
        <div id="myDIV">
-           Add Content
+           <h4> Add Content</h4>
+        <br>
         </div>
 
 
-<button type="button" onclick="myFunction()">Add</button>
-<button type="button" onclick="mydelFunction()">Delete</button>       
+<button type="button" class="button1" onclick="myFunction()">Add</button>
+<button type="button" class="button2" onclick="mydelFunction()">Delete</button>   
+        <br>
 
         
 <script>
@@ -67,26 +74,36 @@ function myFunction() {
   header1.innerHTML = "Enter Image";
   document.getElementById("myDIV").appendChild(header1);
   head1= header1;
+    
+  document.getElementById("myDIV").appendChild(document.createElement("br"));
+  
+
 
   var btn = document.createElement("input");
   btn.setAttribute('type','file');
   btn.setAttribute('accept','image/JPEG');
   btn.setAttribute('name',x);
   btn.setAttribute('id',x);
+
   x=x+1;
   document.getElementById("myDIV").appendChild(btn);
 
+     document.getElementById("myDIV").appendChild(document.createElement("br"));
+    
   var header2 = document.createElement("h4");
   header2.innerHTML = "Enter para";
+    
+    
   document.getElementById("myDIV").appendChild(header2);
   head2=header2;
-
+ document.getElementById("myDIV").appendChild(document.createElement("br"));
   var btn1 = document.createElement("input");
   btn1.setAttribute('type','text');
   btn1.setAttribute('name',y);
   btn1.setAttribute('id',y);
   y=y+1;
   document.getElementById("myDIV").appendChild(btn1);
+    document.getElementById("myDIV").appendChild(document.createElement("br"));
     
     
 //  var del = document.createElement("button");
@@ -275,4 +292,3 @@ if(isset($_POST['submit']))
 
 
 </html>
-

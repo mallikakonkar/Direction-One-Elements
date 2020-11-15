@@ -3,7 +3,9 @@ include_once 'admin.php';
 $sql1 = "DELETE FROM testimonial WHERE id='" . $_GET["id"] . "'";
 if (mysqli_query($conn, $sql1)) {
     echo "Record deleted successfully";
-     header("Location: admin.php");
+//     header("Location: admin.php");
+    echo "<script>window.location.href='admin.php';</script>";
+    exit;
 
 } else {
     echo "Error deleting record: " . mysqli_error($conn);

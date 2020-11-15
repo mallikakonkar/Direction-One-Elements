@@ -11,7 +11,10 @@ $status=$row2['status'];
 
 if (mysqli_query($conn, $sql1)) {
     echo "Record accepted successfully";
-     header("Location: admin.php");
+//     header("Location: admin.php");
+    
+    echo "<script>window.location.href='admin.php';</script>";
+    exit;
 } else {
     echo "Error accepting record: " . mysqli_error($conn);
 }

@@ -14,38 +14,15 @@ $result = $conn->query($sql);
 <html>
 <header>
     
-    
-    <style>
-        
-table, td, th {  
-  border: 1px solid #ddd;
-  text-align: left;
-    z-index: 1000;
-}
 
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-     z-index: 1000;
-}
-
-th, td {
-  text-align: left;
-  padding: 8px;
-     z-index: 1000;
-}
-
-tr:nth-child(even) {background-color: #f2f2f2;
-         z-index: 1000;
-        }
-</style>
     <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="custom.css">
     </header>
+    
 <body>
     
     <nav class="navbar navbar-inverse">
@@ -59,10 +36,16 @@ tr:nth-child(even) {background-color: #f2f2f2;
       <li><a href="adminblog.php">Add a Blog</a></li>
       <li><a href="adminproject.php">Add a Project</a></li>
       <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href='logout.php'>Logout</a></li>
         
     </ul>
   </div>
+        
 </nav>
+    
+
+    
+    <div style="padding:0 50px 50px 50px">
     
    <h2>Direction One Admin</h2>
 
@@ -182,6 +165,7 @@ $result10 = $conn->query($sql10);
         ?>
         
 </table>
+    </div>
       
     
     

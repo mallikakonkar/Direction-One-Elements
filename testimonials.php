@@ -93,7 +93,7 @@ $result = $conn->query($sql);
     
     
       
-  <body>
+  <body class="no-gutters">
     
 	 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
@@ -155,7 +155,7 @@ $result = $conn->query($sql);
       
       
       
-      <div class="pt-5 mt-5" style="padding: 150px;">
+      <div class="pt-5 mt-5" style="padding: 20vw;">
           
           
               <?php
@@ -174,15 +174,15 @@ $result = $conn->query($sql);
               
               <ul class="comment-list">
                 <li class="comment">
-                  <div class="vcard bio">
+<!--                  <div class="vcard bio">-->
 <!--                    <img src="images/person_1.jpg" alt="Image placeholder">-->
-                  </div>
-                  <div class="comment-body">
+<!--                  </div>-->
+<!--                  <div class="comment-body">-->
                     <h3><?php echo $row2['name']?></h3>
                     <div class="meta"><?php echo $row2['time']?></div>
                     <p><?php echo $row2['message']?></p>
 <!--                    <p><a href="#" class="reply">Reply</a></p>-->
-                  </div>
+<!--                  </div>-->
                 </li>
           </ul>
           
@@ -211,8 +211,8 @@ $result = $conn->query($sql);
                   </div>
 
                   
-                  <div class="form-group">
-                    <input type="submit" value="Post Testimonial" class="btn py-3 px-4 btn-primary" name="submit" id="myBtn">
+                  <div class="form-group" >
+                    <input type="submit"  value="Post" class="btn py-3 px-4 btn-primary" name="submit" id="myBtn">
                   </div>
                     
 
@@ -307,9 +307,9 @@ $result3=mysqli_query($conn , $query3);
               <h2 class="ftco-heading-2">Services</h2>
               <ul class="list-unstyled">
                 
-                <li><a href="#">Residential Interiors </a></li>
-                <li><a href="#">Office Interiors</a></li>
-                  <li><a href="#">Architectural Design</a></li>
+                <li><a href="project.php">Residential Interiors </a></li>
+                <li><a href="project.php">Office Interiors</a></li>
+                  <li><a href="project.php">Architectural Design</a></li>
                 
                 
               </ul>

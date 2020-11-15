@@ -136,7 +136,7 @@ include "connection.php";
     				<div class="project" >
 <!--	    				<img src="images/work-1.jpg" class="img-fluid" alt="Colorlib Template">-->
                         <a href="project-list.php?id=<?php echo $id ?>"
-><?php  echo '<img class="img-fluid" style="height: 350px; width: 500px; " src="data:image/jpeg;base64, '.base64_encode($row['image'] ).'" />';
+><?php  echo '<img class="img-fluid" style="height: 350px; width: 100%; " src="data:image/jpeg;base64, '.base64_encode($row['image'] ).'" />';
  ?></a>
 <!--
                           <?php

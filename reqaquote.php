@@ -218,8 +218,8 @@ $result3=mysqli_query($conn , $query3);
             
   <div class="form-group" style="padding: 0 40px;">
       <br>
-      <h3 style="font-size:2.5vw; text-align: center;">Kindly fill the details and we'll get back to you</h3>
-<p style="font-size:1vw;text-align: center;">Knowing your requirements helps us understand what it is you are looking for and hence we can give you the perfect design!</p>
+      <h3 style="text-align: center;" >Kindly fill the details and we'll get back to you</h3>
+<p style="text-align: center;">Knowing your requirements helps us understand what it is you are looking for and hence we can give you the perfect design!</p>
       <br>
 <!--
        <div class="form-group">
@@ -410,9 +410,9 @@ $result3=mysqli_query($conn , $query3);
               <h2 class="ftco-heading-2">Services</h2>
               <ul class="list-unstyled">
                 
-                <li><a href="#">Residential Interiors </a></li>
-                <li><a href="#">Office Interiors</a></li>
-                  <li><a href="#">Architectural Design</a></li>
+                <li><a href="project.php">Residential Interiors </a></li>
+                <li><a href="project.php">Office Interiors</a></li>
+                  <li><a href="project.php">Architectural Design</a></li>
                 
                 
               </ul>

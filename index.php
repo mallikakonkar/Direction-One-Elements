@@ -33,7 +33,7 @@ include "connection.php";
     <link rel="stylesheet" href="css/style.css">
       <style>
           .con1{
-              margin-left:-300px;
+/*              margin-left:-300px;*/
               z-index: 100
           }
           
@@ -176,7 +176,7 @@ font-family: sans-serif;
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Direction One Elements</a>
+	      <a class="navbar-brand"  href="index.html">Direction One Elements</a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -203,8 +203,8 @@ font-family: sans-serif;
         <div class="container con1" >
           <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
           <div class="col-md-7 text ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">You Dream We Design</h1>
-            <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">We travel, we google and we desire  that  a place where we can  truly be ourselves.  Our mission is to make it into reality .</p>
+            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">You Dream <br>We Design</h1>
+            <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">We travel, we google and we desire  that  a place where we can <br> truly be ourselves.  Our mission is to make it into reality .</p>
             <p><a href="project.php" class="btn btn-white btn-outline-white px-4 py-3 mt-3">View our works</a></p>
           </div>
         </div>
@@ -216,8 +216,8 @@ font-family: sans-serif;
         <div class="container con1">
           <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
           <div class="col-md-7 text ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">We're Open In The Pandemic</h1>
-            <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">During this pandemic, we offer online consultancy and take utmost precaution to avoid contact. Safety of our clients is of immense importance to us</p><p><a href="project.php" class="btn btn-white btn-outline-white px-4 py-3 mt-3">View our works</a></p>
+            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">We're Open In<br> The Pandemic</h1>
+            <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">During this pandemic, we offer online consultancy <br> and take utmost precaution to avoid contact. Safety<br> of our clients is of immense importance to us</p><p><a href="project.php" class="btn btn-white btn-outline-white px-4 py-3 mt-3">View our works</a></p>
           </div>
         </div>
         </div>
@@ -228,8 +228,8 @@ font-family: sans-serif;
         <div class="container con1">
           <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
           <div class="col-md-7 text ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Home is an extention of your personality</h1>
-            <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">We all dream of a beautiful  home and our passion is to design such a  home for you. Every little idea that you may have wanted in your home…share it with us and we will bring it all together.  </p><p><a href="project.php" class="btn btn-white btn-outline-white px-4 py-3 mt-3">View our works</a></p>
+            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Home is an extention<br> of your personality</h1>
+            <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">We all dream of a beautiful  home and our passion is to<br> design such a  home for you. Every little idea that you may have<br> wanted in your home…share it with us and we will bring<br> it all together.  </p><p><a href="project.php" class="btn btn-white btn-outline-white px-4 py-3 mt-3">View our works</a></p>
           </div>
         </div>
         </div>
@@ -240,8 +240,8 @@ font-family: sans-serif;
         <div class="container con1">
           <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
           <div class="col-md-7 text ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">What you see is what you get.</h1>
-            <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Our 3D redention of the design space is so accurate that the final out come is exactly as it has been envisioned. We work with budgets and within stipulated time. No surprises there.</p><p><a href="project.php" class="btn btn-white btn-outline-white px-4 py-3 mt-3">View our works</a></p>
+            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">What you see <br> is what you get.</h1>
+            <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Our 3D redention of the design space is so accurate that <br> the final out come is exactly as it has been envisioned.We work <br> with budgets and within stipulated time. No surprises there.</p><p><a href="project.php" class="btn btn-white btn-outline-white px-4 py-3 mt-3">View our works</a></p>
           </div>
         </div>
         </div>
@@ -258,7 +258,7 @@ font-family: sans-serif;
             		<span class="flaticon-idea"></span>
               </div>
               <div class="media-body p-2 mt-3">
-                <h3 class="heading">Perfectly Design</h3>
+                <h3 class="heading">Perfectly <br>Design</h3>
                 <p>We undertake detailed interaction with the end user to understand the exact functional and look n feel  needs of that space thereby creating a user friendly and aesthetically pleasing environment. </p>
               </div>
             </div>      
@@ -280,7 +280,7 @@ font-family: sans-serif;
             		<span class="flaticon-layers"></span>
               </div>
               <div class="media-body p-2 mt-3">
-                <h3 class="heading">Smartly Execute</h3>
+                <h3 class="heading">Smartly Executed</h3>
                 <p>Thanks to our systematic approach and an experienced team , delays, increased costs  and “surprises “ are  completely avoided. Instead a  well  designed  space exactly as planned is meticulously executed to create “wow” results.</p>
               </div>
             </div>      
@@ -297,17 +297,20 @@ font-family: sans-serif;
       <br>
       
       
-      
+                                    <a name="1"></a>
+
 <!--      new code -->
       <section class="ftco-section">
 			<span class="container">
-				<div class="row justify-content-center mb-5 pb-3">
+				<div class="row justify-content-center mb-5 pb-3 no-gutters">
           <div class="col-md-7 heading-section ftco-animate">
+
             <h2 class="mb-4">Our Services</h2>
             <p><em></em></p>
           </div>
         </div>	
-				<div class="row">
+                
+				<div class="row no-gutters">
           <div class="col-md-4 ftco-animate">
             <div class="blog-entry">
                 <div class ='block-20' style="background-image: url('images/s1.jpg');" >
@@ -331,7 +334,7 @@ font-family: sans-serif;
 <!--                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>-->
 <!--                </div>-->
                 <div class="desc pl-3">
-	                <h3 class="heading1 a" ><a href="#">Residential Interiors</a></h3>
+	                <h3 class="heading1 a" ><a href="project.php">Residential Interiors</a></h3>
 	              </div>
               </div>
             </div>
@@ -357,9 +360,10 @@ font-family: sans-serif;
                   <div><a href="#">Admin</a></div>
                   <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
--->
+-->     
+                  
                 <div class="desc pl-3">
-	                <h3 class="heading1 a"><a href="#"><i></i>Office Interiors</a></h3>
+	                <h3 class="heading1 a"><a href="project.php"><i></i>Office Interiors</a></h3>
 	              </div>
               </div>
             </div>
@@ -387,7 +391,7 @@ font-family: sans-serif;
                 </div>
 -->
                 <div class="desc pl-3">
-	                <h3 class="heading1 a"><a href="#">Architectural designs </a></h3>
+	                <h3 class="heading1 a"><a href="project.php">Architectural designs </a></h3>
 	              </div>
               </div>
             </div>
@@ -714,7 +718,7 @@ We design and execute the project. As such the contractors and vendors are our o
             <h2 class="mb-4">Our Main Projects</h2>
             <p>We have done work in the field of residential interiors -home for clients such as the Dinesh Jain and many more.
 
-Our expertise also extends to the field of corporate office interiors where we have done works for Hershey's, ICA Pidillite, Marsh, Bluestar and more. (change to links)
+Our expertise also extends to the field of corporate office interiors where we have done works for Hershey's, ICA Pidillite, Marsh, Bluestar and more. 
 
  
 </p>
@@ -723,31 +727,32 @@ Our expertise also extends to the field of corporate office interiors where we h
     	</div>
     	<div class="container-wrap">
     		<div class="row no-gutters">
+                
+    			
+    			
+                
+    			
+                
     			<div class="col-md-6 col-lg-3 ftco-animate">
     				<div class="project">
-	    				<img src="images/p1.jpg" class="img-fluid" alt="Colorlib Template">
+                     <a href="project-list.php?id=<?php echo 7 ?>">
+
+	    				<img  src="images/p48.jpg" style="width:100%;" class="img-fluid" alt="Colorlib Template">
+                        </a>
 	    				<div class="text">
-	    					<h3>Hershey's Main Office</h3>
+	    					<h3>A RESIDENCE IN JUHU</h3>
 	    				</div>
-	    				<a href="images/Po1.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    				<a href="images/Po4.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
     				</div>
     			</div>
-    			<div class="col-md-6 col-lg-3 ftco-animate">
+                
+                <div class="col-md-6 col-lg-3 ftco-animate">
     				<div class="project">
-	    				<img src="images/p2.jpg" class="img-fluid" alt="Colorlib Template">
-	    				<div class="text">
-	    					<h3>ICA Pidillite Experience Center</h3>
-	    				</div>
-	    				<a href="images/Po2.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
-	    					<span class="icon-expand"></span>
-	    				</a>
-    				</div>
-    			</div>
-    			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="project">
-	    				<img src="images/p3.jpg" class="img-fluid" alt="Colorlib Template">
+	    				     <a href="project-list.php?id=<?php echo 6 ?>">
+                        <img src="images/p3.jpg" style="width:100%;" class="img-fluid" alt="Colorlib Template">
+                        </a>
 	    				<div class="text">
 	    					<h3>Dinesh Jain Residence</h3>
 	    				</div>
@@ -756,17 +761,39 @@ Our expertise also extends to the field of corporate office interiors where we h
 	    				</a>
     				</div>
     			</div>
-    			<div class="col-md-6 col-lg-3 ftco-animate">
+                
+                <div class="col-md-6 col-lg-3 ftco-animate">
     				<div class="project">
-	    				<img src="images/p4.jpg" class="img-fluid" alt="Colorlib Template">
+                        <a href="project-list.php?id=<?php echo 5 ?>">
+
+	    				<img src="images/p2.jpg" style="width:100%;" class="img-fluid" alt="Colorlib Template">
+                        </a>
 	    				<div class="text">
-	    					<h3>Marsh Office, Worli</h3>
+	    					<h3>ICA Pidillite Experience Center</h3>
 	    				</div>
-	    				<a href="images/Po4.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    				<a href="images/Po2.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
     				</div>
     			</div>
+                
+                <div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="project">
+                        
+                        <a href="project-list.php?id=<?php echo 4 ?>">
+
+	    				<img src="images/p1.jpg" style="width:100%;" class="img-fluid" alt="Colorlib Template">
+                        </a>
+	    				<div class="text">
+	    					<h3>Hershey's Main Office</h3>
+	    				</div>
+	    				<a href="images/Po1.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+    				</div>
+    			</div>
+                
+                
     		</div>
     	</div>
     </section>
@@ -987,10 +1014,10 @@ Our expertise also extends to the field of corporate office interiors where we h
       <br>
       <br>
       <section>
-              <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section ftco-animate">
+              <div class="row justify-content-center mb-5 pb-3 no-gutters">
+          <div class="col-md-7 heading-section ftco-animate ">
             <h2 class="mb-4">Our Clients</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+            <p></p>
           </div>
         </div>
       <div class="rowlogo">
@@ -1032,10 +1059,10 @@ Our expertise also extends to the field of corporate office interiors where we h
       ?>
       
       
-		<section class="ftco-section">
+		<section class="ftco-section" >
 			<div class="container">
 				<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section ftco-animate">
+          <div class="col-md-7 heading-section ftco-animate no-gutters">
          <a href="blog.php"> <h2 class="mb-4">Recent Blog</h2>  </a>
 <!--            <p>Check out recent blogs here</p>-->
           </div>
@@ -1058,11 +1085,11 @@ Our expertise also extends to the field of corporate office interiors where we h
         <div class="col-md-4 ftco-animate">
             <div class="blog-entry">
                 
-                            
+
+                         
                               <a href="blog-single.php?id=<?php echo $id ?>" 
-><?php  echo '<img class="block-20" style="width:400px;" src="data:image/jpeg;base64, '.base64_encode($row['image'] ).'" />';
+><?php  echo '<img class="block-20" style="width:100%" src="data:image/jpeg;base64, '.base64_encode($row['image'] ).'" />';
  ?></a>
-         
                     
               <div class="text d-flex py-4">
 <!--
@@ -1149,9 +1176,9 @@ Our expertise also extends to the field of corporate office interiors where we h
               <h2 class="ftco-heading-2">Services</h2>
               <ul class="list-unstyled">
                 
-                <li><a href="#">Residential Interiors </a></li>
-                <li><a href="#">Office Interiors</a></li>
-                  <li><a href="#">Architectural Design</a></li>
+                <li><a href="#1">Residential Interiors </a></li>
+                <li><a href="#1">Office Interiors</a></li>
+                  <li><a href="#1">Architectural Design</a></li>
                 
                 
               </ul>

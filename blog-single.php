@@ -3,7 +3,7 @@
 <?php
 include "connection.php";
   $id=$_GET['id'] ;
-echo $id;
+//echo $id;
 
 $query1="SELECT name FROM `blog` where id=$id;";
 $result=mysqli_query($conn , $query1);
@@ -123,7 +123,7 @@ $result2=mysqli_query($conn , $query2);
             
       <div class="container">
         <div class="row">
-          <div class="ftco-animate" style="padding: 0 150px;">
+          <div class="ftco-animate" style="padding: 0 10vw;">
             <h2 class="mb-3 a" style="text-align: center;"><?php  echo $row['name']; ?></h2>
               <br>
               
@@ -251,7 +251,6 @@ $result6=mysqli_query($conn , $query6);
                   
           if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit']) ) {
               
-    echo"hii u hjnvdj";
 	
 //    echo print_r($_POST,true);
     
@@ -265,12 +264,7 @@ $result6=mysqli_query($conn , $query6);
 
 $result=mysqli_query($conn , $query1);
 
-       if(mysqli_query($conn, $query1)){
-           echo 'succes';
-
-    } else{
-        echo "ERROR: Could not able to execute $query1. " . mysqli_error($conn);
-    }
+       
               
               
                $query2="INSERT INTO comment(id,name,email,message)
@@ -279,13 +273,7 @@ $result=mysqli_query($conn , $query1);
 
 $result2=mysqli_query($conn , $query2);
               
-       if(mysqli_query($conn, $query2)){
-           echo 'succes2';
-
-    } else{
-        echo "ERROR: Could not able to execute $query1. " . mysqli_error($conn);
-    }
-              
+      
     
      $query3="TRUNCATE TABLE comment1";
 
@@ -339,9 +327,9 @@ $result3=mysqli_query($conn , $query3);
               <h2 class="ftco-heading-2">Services</h2>
               <ul class="list-unstyled">
                 
-                <li><a href="#">Residential Interiors </a></li>
-                <li><a href="#">Office Interiors</a></li>
-                  <li><a href="#">Architectural Design</a></li>
+              <li><a href="project.php">Residential Interiors </a></li>
+                <li><a href="project.php">Office Interiors</a></li>
+                  <li><a href="project.php">Architectural Design</a></li>
                 
                 
               </ul>

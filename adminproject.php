@@ -21,17 +21,23 @@ $Id;
             text-align: center;
             font-family: sans-serif;
             font-size: 20px;
-                ;
+                padding: 15px 60px 15px 60px;
         }
     
     </style>
+         <link rel="stylesheet" type="text/css" href="external.css">
+
 </header>
 <body>
+    <a href="admin.php">     <button class="button4" >Admin Home</button></a>
+    <br>
+   <br>
+    <br>
     
     <form action="" method="post"  enctype="multipart/form-data">
-Enter the Project Name:<br><input type="text" name="name" id="name"  /><br />
+Enter the Project Name:<br><input type="textarea" name="name" id="name"  /><br />
         <br><br>
-Enter the Project Information:<br><input type="text" name="info" id="name"  /><br />
+Enter the Project Information:<br><input type="textarea" name="info" id="name"  /><br />
         <br><br>
 Enter the Front Page image:
         <br>
@@ -52,8 +58,8 @@ Enter the Front Page image:
         </div>
 
 
-<button type="button" onclick="myFunction()">Add Picture</button>
-<button type="button" onclick="mydelFunction()">Delete</button>       
+<button type="button" class="button1" onclick="myFunction()">Add Picture</button>
+<button type="button" class="button2" onclick="mydelFunction()">Delete</button>       
 
         
 <script>
@@ -64,6 +70,9 @@ function myFunction() {
   header1.innerHTML = "Enter Image";
   document.getElementById("myDIV").appendChild(header1);
   head1= header1;
+    
+      document.getElementById("myDIV").appendChild(document.createElement("br"));
+
 
   var btn = document.createElement("input");
   btn.setAttribute('type','file');
@@ -72,6 +81,8 @@ function myFunction() {
   btn.setAttribute('id',x);
   x=x+1;
   document.getElementById("myDIV").appendChild(btn);
+      document.getElementById("myDIV").appendChild(document.createElement("br"));
+
 
 
     
@@ -163,6 +174,7 @@ if(isset($_POST['submit']))
     if(isset($_FILES['image'])) 
     {
             $name=$_POST['name'];
+            $name = mysqli_real_escape_string($conn,$name);
             $info=$_POST['info'];
             $fp=addslashes(file_get_contents($_FILES['image']['tmp_name']));
      }
