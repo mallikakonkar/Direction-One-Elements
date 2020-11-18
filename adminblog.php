@@ -60,7 +60,7 @@ $Id;
         <br>
         </div>
 
-
+<br>
 <button type="button" class="button1" onclick="myFunction()">Add</button>
 <button type="button" class="button2" onclick="mydelFunction()">Delete</button>   
         <br>

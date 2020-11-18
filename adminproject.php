@@ -55,8 +55,10 @@ Enter the Front Page image:
         
        <div id="myDIV">
            Add Picture
+           <br>
+           <br>
         </div>
-
+<br>
 
 <button type="button" class="button1" onclick="myFunction()">Add Picture</button>
 <button type="button" class="button2" onclick="mydelFunction()">Delete</button>       
@@ -66,12 +68,12 @@ Enter the Front Page image:
 function myFunction() {
   
   
-  var header1 = document.createElement("h4");
-  header1.innerHTML = "Enter Image";
-  document.getElementById("myDIV").appendChild(header1);
-  head1= header1;
+//  var header1 = document.createElement("h4");
+//  header1.innerHTML = "Enter Image";
+//  document.getElementById("myDIV").appendChild(header1);
+//  head1= header1;
     
-      document.getElementById("myDIV").appendChild(document.createElement("br"));
+//      document.getElementById("myDIV").appendChild(document.createElement("br"));
 
 
   var btn = document.createElement("input");
@@ -81,7 +83,7 @@ function myFunction() {
   btn.setAttribute('id',x);
   x=x+1;
   document.getElementById("myDIV").appendChild(btn);
-      document.getElementById("myDIV").appendChild(document.createElement("br"));
+//      document.getElementById("myDIV").appendChild(document.createElement("br"));
 
 
 
@@ -120,7 +122,7 @@ function myFunction() {
        
        
        
-        head1.parentNode.removeChild(head1);   
+//        head1.parentNode.removeChild(head1);   
       
      
        
