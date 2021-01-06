@@ -185,7 +185,7 @@ font-family: sans-serif;
 	        <ul class="navbar-nav ml-auto">
 	        	<li class="nav-item active"><a href="index.php" class="nav-link">Home</a></li>
 	        	<li class="nav-item"><a href="project.php" class="nav-link">Projects</a></li>
-	        	<li class="nav-item"><a href="testimonials.php" class="nav-link">Testimonials</a></li>
+	        	<li class="nav-item"><a href="testimonials.php" class="nav-link" style="display:none">Testimonials</a></li>
 	        	<li class="nav-item"><a href="blog.php" class="nav-link">Blogs</a></li>
                 <li class="nav-item"><a href="reqaquote.php" class="nav-link">Request a Quote</a></li>
                 <li class="nav-item"><a href="services.html" class="nav-link">Media Coverage</a></li>
@@ -1163,7 +1163,7 @@ Our expertise also extends to the field of corporate office interiors where we h
                 <li><a href="index.php">Home</a></li>
 <!--                <li><a href="#">About</a></li>-->
                 <li><a href="project.php">Projects</a></li>
-                <li><a href="testimonials.php">Testimonials</a></li>
+                <!-- <li><a href="testimonials.php">Testimonials</a></li> -->
                 <li><a href="blog.php">Blogs</a></li>
                   <li><a href="reqaquote.php">Request a Quote</a></li>
                   <li><a href="services.html">Media Coverage</a></li>

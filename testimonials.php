@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE htm>
 <?php
 include "connection.php";
 $sql = "SELECT * from reqaquote1";
@@ -6,7 +6,7 @@ $result = $conn->query($sql);
 
 
 ?>
-<html lang="en">
+<html lang="en" style="display:none">
   <head>
     <title>Direction One Elements</title>
     <meta charset="utf-8">
